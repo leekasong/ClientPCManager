@@ -17,15 +17,17 @@ CCommandCtrl::CCommandCtrl()
 		_stprintf(fileName, _T("%d.BMP"), i + 1);
 		m_pCustomButton[i] = new CCustomButton(fileName);
 	}
+
+	
 }
 
 CCommandCtrl::~CCommandCtrl()
 {
 	for (int i = 0; i < MAX_BUTTON_NUMBER; i++) {
 		delete m_pCustomButton[i];
+		delete m_pViewList[i];
 	}
-
-	delete m_pGraphWnd;
+	
 }
 
 
@@ -61,7 +63,8 @@ int CCommandCtrl::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		m_pCustomButton[i]->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, 250);
 		m_pCustomButton[i]->SetButtonText(text[i], _tcslen(text[i]) + 1);
 	}
-	m_pGraphWnd = new CGraphWnd;
+	
+	
 	return 0;
 }
 
@@ -75,17 +78,33 @@ void CCommandCtrl::OnSize(UINT nType, int cx, int cy)
 	int h = r.Height() / MAX_BUTTON_NUMBER;
 	for (int i = 0; i < MAX_BUTTON_NUMBER; i++) {
 		m_pCustomButton[i]->SetWindowPos(NULL, r.left, r.top + h*i, r.Width() - 1, h, 0);
+		
 	}
+
+	
+
 
 }
 
 
 afx_msg LRESULT CCommandCtrl::OnUmCommandChnaged(WPARAM wParam, LPARAM lParam)
 {
-	m_pBoardView->SetViewWnd(new CGraphWnd);
+	if (wParam >= 1 && wParam <= 4) {
+		int idx = wParam - 1;
+		for (int i = 0; i < 4; i++) {
+			m_pViewList[i]->ShowWindow(SW_HIDE);
+		}
+		m_pBoardView->SetViewWnd(m_pViewList[idx]);
+	}
 	return 0;
 }
 
 void CCommandCtrl::SetBoardViewWnd(CBoardView *pBoardView) {
 	m_pBoardView = pBoardView;
+	for (int i = 0; i < MAX_BUTTON_NUMBER; i++) {
+		m_pViewList[i]->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), m_pBoardView, 150+i);
+		m_pBoardView->SetViewWnd(m_pViewList[i]);
+	}
+	
+	
 }

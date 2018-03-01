@@ -198,6 +198,7 @@
     <ClInclude Include="MonitoringServerView.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SupportView.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
@@ -218,6 +219,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SupportView.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MonitoringServer.rc" />
@@ -228,8 +230,10 @@
   <ItemGroup>
     <Image Include="..\Debug\gra.bmp" />
     <Image Include="..\Debug\PC_Small.bmp" />
+    <Image Include="res\gra.bmp" />
     <Image Include="res\MonitoringServer.ico" />
     <Image Include="res\MonitoringServerDoc.ico" />
+    <Image Include="res\PC_Small.bmp" />
     <Image Include="res\Toolbar.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

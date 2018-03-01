@@ -17,6 +17,8 @@ private:
 	BYTE m_transValue;
 
 	TCHAR *m_pText;
+
+	int m_id; //이 버튼을 식별할 id
 public:
 	//이미지를 메모리 DC로 복사하는 함수
 	BOOL ImageToDC(TCHAR *pFileName, CDC *pImageDC);

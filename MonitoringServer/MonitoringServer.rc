@@ -67,9 +67,9 @@ END
 // Bitmap
 //
 
-IDB_PC_BITMAP           BITMAP                  "E:\\mfc\\MonitoringServer\\Debug\\PC_Small.bmp"
-
 IDB_GRADATION_BITMAP    BITMAP                  "E:\\mfc\\MonitoringServer\\Debug\\gra.bmp"
+
+IDB_PC_BITMAP           BITMAP                  "E:\\mfc\\MonitoringServer\\Debug\\PC_Small.bmp"
 
 #endif    // Korean (Korea) resources
 /////////////////////////////////////////////////////////////////////////////
@@ -84,6 +84,14 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // Icon
 //
 
@@ -92,14 +100,6 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 IDR_MAINFRAME           ICON                    "res\\MonitoringServer.ico"
 
 IDR_MonitoringServeTYPE ICON                    "res\\MonitoringServerDoc.ico"
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Bitmap
-//
-
-IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
 
 
 /////////////////////////////////////////////////////////////////////////////

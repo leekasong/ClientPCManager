@@ -22,9 +22,10 @@ CBoardView::~CBoardView()
 
 
 BEGIN_MESSAGE_MAP(CBoardView, CWnd)
-	ON_WM_PAINT()
+	
 	ON_WM_CREATE()
 	ON_WM_SIZE()
+	ON_WM_PAINT()
 END_MESSAGE_MAP()
 
 
@@ -34,24 +35,14 @@ END_MESSAGE_MAP()
 
 
 
-void CBoardView::OnPaint()
-{
-	CPaintDC dc(this); // device context for painting
-	CRect r;
-	GetClientRect(&r);
-	dc.FillSolidRect(r, RGB(255, 255, 0));
-}
+
 
 void CBoardView::SetViewWnd(CWnd *pViewWnd) {
-	if (this->m_pViewWnd != NULL) {
-		m_pViewWnd->DestroyWindow();
-		delete m_pViewWnd;
-	}
 	this->m_pViewWnd = pViewWnd;
-	m_pViewWnd->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, 35002);
+	this->m_pViewWnd->ShowWindow(SW_SHOW);
 	CRect r;
 	GetClientRect(&r);
-	this->PostMessageW(WM_SIZE, r.Width(), r.Height());
+	this->PostMessage(WM_SIZE, r.Width(), r.Height());
 }
 
 
@@ -60,8 +51,8 @@ int CBoardView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	if (CWnd::OnCreate(lpCreateStruct) == -1)
 		return -1;
 
-	this->m_pViewWnd = new CGraphWnd;
-	m_pViewWnd->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, 35001);
+	/*this->m_pViewWnd = new CGraphWnd;
+	m_pViewWnd->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, 35001);*/
 	
 	return 0;
 }
@@ -74,7 +65,22 @@ void CBoardView::OnSize(UINT nType, int cx, int cy)
 	CRect r;
 	GetClientRect(&r);
 
-	m_pViewWnd->SetWindowPos(NULL, r.left, r.top, r.Width(), r.Height(), 0);
-	m_pViewWnd->PostMessageW(UM_COMMAND_CHNAGED, 0, 0);
+
+	if (m_pViewWnd != NULL) {
+		m_pViewWnd->SetWindowPos(NULL, r.left, r.top, r.Width(), r.Height(), 0);
+		m_pViewWnd->PostMessage(UM_COMMAND_CHNAGED, 0, 0);
+	}
 	
+}
+
+
+void CBoardView::OnPaint()
+{
+	CPaintDC dc(this); // device context for painting
+					   // TODO: Add your message handler code here
+					   // Do not call CWnd::OnPaint() for painting messages
+
+	CRect r;
+	GetClientRect(&r);
+	dc.FillSolidRect(r, RGB(255, 0, 0));
 }

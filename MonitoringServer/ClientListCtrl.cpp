@@ -310,6 +310,9 @@ void CClientListCtrl::OnLButtonDown(UINT nFlags, CPoint point)
 					m_checkedNumber++;
 					m_pCheckedList[index] = TRUE;
 				}
+				else {
+					AfxMessageBox(_T("체크할 수 있는 개수가 최대입니다."));
+				}
 			}
 			//체크된 체크박스면
 			else {

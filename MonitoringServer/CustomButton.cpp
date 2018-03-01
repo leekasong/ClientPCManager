@@ -25,11 +25,15 @@ CCustomButton::CCustomButton(TCHAR *pFileName)
 	}
 	
 	::_tcscpy(m_fileName, pFileName);
+	
 	m_bClicked = FALSE;
 	m_bHover = FALSE;
 
 	m_transValue = 0;
 	m_pText = NULL;
+
+	//비트맵파일을 1.BMP, 2.BMP ..식으로 만들었기 때문에 가능한 코드
+	m_id = _ttoi(pFileName); 
 }
 
 CCustomButton::~CCustomButton()
@@ -152,8 +156,8 @@ void CCustomButton::OnLButtonUp(UINT nFlags, CPoint point)
 	if (m_bClicked) {
 		m_bClicked = FALSE;
 		ReleaseCapture();
+		::PostMessage(GetParent()->m_hWnd, UM_COMMAND_CHNAGED, m_id, 0);
 		RedrawWindow();
-		::PostMessage(GetParent()->m_hWnd, UM_COMMAND_CHNAGED, 0, 0);
 	}
 
 	CWnd::OnLButtonUp(nFlags, point);

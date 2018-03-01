@@ -41,6 +41,7 @@
 
 using namespace Gdiplus;
 
+//wParam (½Äº°°ª) : 0-Monitoring, 1-History, 2-information, 3-Support
 #define UM_COMMAND_CHNAGED	WM_USER + 1
 
 

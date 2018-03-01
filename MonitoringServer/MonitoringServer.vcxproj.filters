@@ -60,6 +60,9 @@
     <ClInclude Include="ListCtrlMoveBtn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SupportView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MonitoringServer.cpp">
@@ -98,6 +101,9 @@
     <ClCompile Include="ListCtrlMoveBtn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SupportView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MonitoringServer.rc">
@@ -123,6 +129,12 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="..\Debug\PC_Small.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\gra.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PC_Small.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
