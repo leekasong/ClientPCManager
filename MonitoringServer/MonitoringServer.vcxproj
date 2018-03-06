@@ -186,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BoardView.h" />
+    <ClInclude Include="ClientDBData.h" />
     <ClInclude Include="ClientListCtrl.h" />
     <ClInclude Include="ClientListView.h" />
     <ClInclude Include="CommandCtrl.h" />
@@ -206,6 +207,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BoardView.cpp" />
+    <ClCompile Include="ClientDBData.cpp" />
     <ClCompile Include="ClientListCtrl.cpp" />
     <ClCompile Include="ClientListView.cpp" />
     <ClCompile Include="CommandCtrl.cpp" />
@@ -231,6 +233,7 @@
     <ResourceCompile Include="MonitoringServer.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="res\MonitoringServer.rc2" />
   </ItemGroup>
   <ItemGroup>

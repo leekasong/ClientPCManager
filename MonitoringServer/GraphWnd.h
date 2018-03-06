@@ -1,12 +1,27 @@
 #pragma once
 #include "CommonView.h"
-
+#include "ClientDBData.h"
 // CGraphWnd
 
+//한 컴퓨터에 CPU, Memory 등은 수백가지 정보를 담는 구조체
+typedef struct _CLIENT_REALTIME_DATA_EX {
+	TCHAR *pName;
+	int *cpuList;
+	int *memoryList;
+	int *networkList;
+	TCHAR **pTimeList;
+	int timeNumber;
+}CLIENT_REALTIME_DATA_EX, *PCLIENT_REALTIME_DATA_EX;
 class CGraphWnd : public CCommonView
 {
 	DECLARE_DYNAMIC(CGraphWnd)
-
+private:
+	ClientDBData *m_pClientDB;
+	
+	PCLIENT_REALTIME_DATA_EX m_pClientRealTimeData;
+	
+public:
+	
 public:
 	CGraphWnd();
 	virtual ~CGraphWnd();
