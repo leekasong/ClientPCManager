@@ -1,9 +1,9 @@
 #pragma once
-
+#include "CommonView.h"
 
 // CSupportView
 
-class CSupportView : public CWnd
+class CSupportView : public CCommonView
 {
 	DECLARE_DYNAMIC(CSupportView)
 private:

@@ -24,6 +24,7 @@ public:
 	BOOL ImageToDC(TCHAR *pFileName, CDC *pImageDC);
 	//텍스트 설정 함수
 	void SetButtonText(TCHAR *pText, DWORD dwlength);
+
 public:
 	CCustomButton(TCHAR *pFileName);
 	virtual ~CCustomButton();

@@ -17,6 +17,7 @@ CClientListView::CClientListView(CBoardView *pBoardView)
 
 CClientListView::~CClientListView()
 {
+	if(m_pBoardView) delete m_pBoardView;
 }
 
 
@@ -54,6 +55,7 @@ int CClientListView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	m_commandCtrl.Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, 2501);
 
 	m_commandCtrl.SetBoardViewWnd(m_pBoardView);
+	m_commandCtrl.SetClientListCtrl(&m_clientListCtrl);
 
 	return 0;
 }

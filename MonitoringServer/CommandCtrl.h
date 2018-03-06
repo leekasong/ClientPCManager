@@ -3,6 +3,8 @@
 #include "BoardView.h"
 #include "GraphWnd.h"
 #include "SupportView.h"
+#include "InformationView.h"
+#include "CommonView.h"
 #define MAX_BUTTON_NUMBER	4
 
 // CCommandCtrl
@@ -13,9 +15,11 @@ class CCommandCtrl : public CWnd
 private:
 	CCustomButton *m_pCustomButton[MAX_BUTTON_NUMBER];
 	CBoardView *m_pBoardView;
-	CWnd *m_pViewList[MAX_BUTTON_NUMBER] = {new CGraphWnd, new CGraphWnd, new CGraphWnd, new CSupportView };
+	CCommonView *m_pViewList[MAX_BUTTON_NUMBER] = {new CGraphWnd, new CGraphWnd, new CInformationView, new CSupportView };
+	
 public:
 	void SetBoardViewWnd(CBoardView *pBoardView);
+	void SetClientListCtrl(CClientListCtrl *pClientListCtrl);
 public:
 	CCommandCtrl();
 	virtual ~CCommandCtrl();

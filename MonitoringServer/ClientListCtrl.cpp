@@ -11,8 +11,13 @@
 IMPLEMENT_DYNAMIC(CClientListCtrl, CWnd)
 
 CClientListCtrl::CClientListCtrl()
+	: m_pMoveBtn(NULL)
+	, m_pGradationDC(NULL)
+	, m_pPCBitmapDC(NULL)
+	, m_pListText(NULL)
+	, m_pCheckedList(NULL)
 {
-	m_pMoveBtn = NULL;
+	
 	m_entryHeight = 30;
 	m_pListText = new CStringList;
 	CString item;

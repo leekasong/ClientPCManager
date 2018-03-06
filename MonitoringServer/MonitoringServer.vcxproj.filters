@@ -63,6 +63,15 @@
     <ClInclude Include="SupportView.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="InformationView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InformationDataView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MonitoringServer.cpp">
@@ -102,6 +111,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SupportView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InformationView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InformationDataView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

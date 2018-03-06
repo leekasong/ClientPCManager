@@ -1,9 +1,9 @@
 #pragma once
-
+#include "CommonView.h"
 
 // CGraphWnd
 
-class CGraphWnd : public CWnd
+class CGraphWnd : public CCommonView
 {
 	DECLARE_DYNAMIC(CGraphWnd)
 

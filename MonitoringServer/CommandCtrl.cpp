@@ -93,7 +93,10 @@ afx_msg LRESULT CCommandCtrl::OnUmCommandChnaged(WPARAM wParam, LPARAM lParam)
 		int idx = wParam - 1;
 		for (int i = 0; i < 4; i++) {
 			m_pViewList[i]->ShowWindow(SW_HIDE);
+			
+			m_pViewList[i]->ClearCheckedList();
 		}
+		m_pViewList[idx]->Notify();
 		m_pBoardView->SetViewWnd(m_pViewList[idx]);
 	}
 	return 0;
@@ -107,4 +110,10 @@ void CCommandCtrl::SetBoardViewWnd(CBoardView *pBoardView) {
 	}
 	
 	
+}
+
+void CCommandCtrl::SetClientListCtrl(CClientListCtrl *pClientListCtrl) {
+	for (int i = 0; i < MAX_BUTTON_NUMBER; i++) {
+		m_pViewList[i]->SetClientListCtrl(pClientListCtrl);
+	}
 }

@@ -189,8 +189,11 @@
     <ClInclude Include="ClientListCtrl.h" />
     <ClInclude Include="ClientListView.h" />
     <ClInclude Include="CommandCtrl.h" />
+    <ClInclude Include="CommonView.h" />
     <ClInclude Include="CustomButton.h" />
     <ClInclude Include="GraphWnd.h" />
+    <ClInclude Include="InformationDataView.h" />
+    <ClInclude Include="InformationView.h" />
     <ClInclude Include="ListCtrlMoveBtn.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="MonitoringServer.h" />
@@ -206,8 +209,11 @@
     <ClCompile Include="ClientListCtrl.cpp" />
     <ClCompile Include="ClientListView.cpp" />
     <ClCompile Include="CommandCtrl.cpp" />
+    <ClCompile Include="CommonView.cpp" />
     <ClCompile Include="CustomButton.cpp" />
     <ClCompile Include="GraphWnd.cpp" />
+    <ClCompile Include="InformationDataView.cpp" />
+    <ClCompile Include="InformationView.cpp" />
     <ClCompile Include="ListCtrlMoveBtn.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="MonitoringServer.cpp" />

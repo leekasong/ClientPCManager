@@ -29,6 +29,10 @@ private:
 	int m_alphaEntryIndex;
 public:
 	void LoadBitmapToDC(CDC *pCompatibleDC, CDC *pTargetDC, DWORD dwResourceId, DWORD *pBmpWidth, DWORD *pBmpHeight);
+
+	//체크된 목록에 대한 인터페이스
+	inline int GetCheckedListSize() { return MAX_ITEM_NUMBER; }
+	inline void GetCheckedList(BOOL *pCheckedList) { ::CopyMemory(pCheckedList, m_pCheckedList, sizeof(BOOL)*MAX_ITEM_NUMBER); }
 public:
 	CClientListCtrl();
 	virtual ~CClientListCtrl();
