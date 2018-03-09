@@ -33,13 +33,11 @@
 
 #include <afxcontrolbars.h>     // MFC support for ribbons and control bars
 
+extern int g_wnd_id_a;
+extern int g_wnd_id_b;
+extern int g_wnd_id_c;
 
 
-
-#include <gdiplus.h>
-#pragma comment(lib, "gdiplus.lib")
-
-using namespace Gdiplus;
 
 //wParam (½Äº°°ª) : 0-Monitoring, 1-History, 2-information, 3-Support
 #define UM_COMMAND_CHNAGED	WM_USER + 1

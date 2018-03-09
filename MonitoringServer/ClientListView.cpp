@@ -51,8 +51,8 @@ int CClientListView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	if (CWnd::OnCreate(lpCreateStruct) == -1)
 		return -1;
 
-	m_clientListCtrl.Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, 2500);
-	m_commandCtrl.Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, 2501);
+	m_clientListCtrl.Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, ++g_wnd_id_a);
+	m_commandCtrl.Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, ++g_wnd_id_a);
 
 	m_commandCtrl.SetBoardViewWnd(m_pBoardView);
 	m_commandCtrl.SetClientListCtrl(&m_clientListCtrl);

@@ -186,7 +186,7 @@ int CClientListCtrl::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	//상하 이동 버튼 윈도우
 	m_pMoveBtn = new CListCtrlMoveBtn;
-	m_pMoveBtn->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, 45000);
+	m_pMoveBtn->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, ++g_wnd_id_a);
 		
 	
 

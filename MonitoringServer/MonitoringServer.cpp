@@ -69,11 +69,7 @@ BOOL CMonitoringServerApp::InitInstance()
 	InitCommonControlsEx(&InitCtrls);
 
 	CWinApp::InitInstance();
-	GdiplusStartupInput gdiPlusStartupInput;
-	if (GdiplusStartup(&g_gdiPlusToken, &gdiPlusStartupInput, NULL) != Ok) {
-		AfxMessageBox(_T("Failed to initialize GDI+"));
-		return FALSE;
-	}
+
 		// Initialize OLE libraries
 	if (!AfxOleInit())
 	{
@@ -131,7 +127,6 @@ BOOL CMonitoringServerApp::InitInstance()
 
 int CMonitoringServerApp::ExitInstance()
 {
-	::GdiplusShutdown(g_gdiPlusToken);
 	AfxOleTerm(FALSE);
 
 	return CWinApp::ExitInstance();

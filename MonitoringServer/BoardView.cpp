@@ -51,8 +51,6 @@ int CBoardView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	if (CWnd::OnCreate(lpCreateStruct) == -1)
 		return -1;
 
-	/*this->m_pViewWnd = new CGraphWnd;
-	m_pViewWnd->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, 35001);*/
 	
 	return 0;
 }

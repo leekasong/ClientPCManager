@@ -66,10 +66,15 @@ END
 //
 // Bitmap
 //
+#ifdef _DEBUG
+IDB_GRADATION_BITMAP    BITMAP                  "E:\\mfc\\ClientPCManager\\Debug\\gra.bmp"
 
-IDB_GRADATION_BITMAP    BITMAP                  "E:\\mfc\\MonitoringServer\\Debug\\gra.bmp"
+IDB_PC_BITMAP           BITMAP                  "E:\\mfc\\ClientPCManager\\Debug\\PC_Small.bmp"
+#else
+IDB_GRADATION_BITMAP    BITMAP                  "E:\\mfc\\ClientPCManager\\Release\\gra.bmp"
 
-IDB_PC_BITMAP           BITMAP                  "E:\\mfc\\MonitoringServer\\Debug\\PC_Small.bmp"
+IDB_PC_BITMAP           BITMAP                  "E:\\mfc\\ClientPCManager\\Release\\PC_Small.bmp"
+#endif
 
 #endif    // Korean (Korea) resources
 /////////////////////////////////////////////////////////////////////////////

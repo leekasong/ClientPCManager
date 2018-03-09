@@ -72,6 +72,18 @@
     <ClInclude Include="CommonView.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ClientResourceDB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InformationDataSWView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InformationDiskView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InformationProcessorDataView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="ClientDBData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -123,6 +135,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CommonView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InformationDataSWView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InformationDiskView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InformationProcessorDataView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ClientDBData.cpp">

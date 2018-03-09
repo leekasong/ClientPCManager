@@ -112,11 +112,11 @@ int CMonitoringServerView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	if (CView::OnCreate(lpCreateStruct) == -1)
 		return -1;
 
-	int nID = 25000;
+	
 
-	m_boardView.Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, nID++);
+	m_boardView.Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, ++g_wnd_id_b);
 	m_pClientListView = new CClientListView(&m_boardView);
-	m_pClientListView->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0,0,0,0), this, nID++);
+	m_pClientListView->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0,0,0,0), this, ++g_wnd_id_a);
 
 	
 	

@@ -1,6 +1,6 @@
 #pragma once
 #include "CommonView.h"
-#include "ClientDBData.h"
+#include "ClientResourceDB.h"
 // CGraphWnd
 
 //한 컴퓨터에 CPU, Memory 등은 수백가지 정보를 담는 구조체
@@ -16,7 +16,7 @@ class CGraphWnd : public CCommonView
 {
 	DECLARE_DYNAMIC(CGraphWnd)
 private:
-	ClientDBData *m_pClientDB;
+	
 	
 	PCLIENT_REALTIME_DATA_EX m_pClientRealTimeData;
 	

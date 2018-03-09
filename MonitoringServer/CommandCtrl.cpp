@@ -60,7 +60,7 @@ int CCommandCtrl::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		return -1;
 	TCHAR *text[MAX_BUTTON_NUMBER] = { _T("Monitoring"), _T("History"), _T("Information"), _T("Support") };
 	for (int i = 0; i < MAX_BUTTON_NUMBER; i++) {
-		m_pCustomButton[i]->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, 250);
+		m_pCustomButton[i]->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, ++g_wnd_id_a);
 		m_pCustomButton[i]->SetButtonText(text[i], _tcslen(text[i]) + 1);
 	}
 	
@@ -105,7 +105,7 @@ afx_msg LRESULT CCommandCtrl::OnUmCommandChnaged(WPARAM wParam, LPARAM lParam)
 void CCommandCtrl::SetBoardViewWnd(CBoardView *pBoardView) {
 	m_pBoardView = pBoardView;
 	for (int i = 0; i < MAX_BUTTON_NUMBER; i++) {
-		m_pViewList[i]->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), m_pBoardView, 150+i);
+		m_pViewList[i]->Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), m_pBoardView, ++g_wnd_id_b);
 		m_pBoardView->SetViewWnd(m_pViewList[i]);
 	}
 	
