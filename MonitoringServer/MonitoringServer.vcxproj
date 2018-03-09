@@ -193,7 +193,10 @@
     <ClInclude Include="CommonView.h" />
     <ClInclude Include="CustomButton.h" />
     <ClInclude Include="GraphWnd.h" />
+    <ClInclude Include="InformationDataSWView.h" />
     <ClInclude Include="InformationDataView.h" />
+    <ClInclude Include="InformationDiskView.h" />
+    <ClInclude Include="InformationProcessorDataView.h" />
     <ClInclude Include="InformationView.h" />
     <ClInclude Include="ListCtrlMoveBtn.h" />
     <ClInclude Include="MainFrm.h" />
@@ -214,7 +217,10 @@
     <ClCompile Include="CommonView.cpp" />
     <ClCompile Include="CustomButton.cpp" />
     <ClCompile Include="GraphWnd.cpp" />
+    <ClCompile Include="InformationDataSWView.cpp" />
     <ClCompile Include="InformationDataView.cpp" />
+    <ClCompile Include="InformationDiskView.cpp" />
+    <ClCompile Include="InformationProcessorDataView.cpp" />
     <ClCompile Include="InformationView.cpp" />
     <ClCompile Include="ListCtrlMoveBtn.cpp" />
     <ClCompile Include="MainFrm.cpp" />

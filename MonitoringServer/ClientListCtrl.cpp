@@ -45,7 +45,7 @@ CClientListCtrl::~CClientListCtrl()
 	if (m_pGradationDC) delete m_pGradationDC;
 	if (m_pPCBitmapDC) delete m_pPCBitmapDC;
 	if (m_pListText) delete m_pListText;
-	if (m_pCheckedList) delete m_pCheckedList;
+	if (m_pCheckedList) delete[] m_pCheckedList;
 }
 
 

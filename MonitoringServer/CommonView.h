@@ -7,7 +7,7 @@ class CCommonView : public CWnd
 {
 	DECLARE_DYNAMIC(CCommonView)
 protected:
-	BOOL *m_pChekedList;
+	BOOL *m_pCheckedList;
 	CClientListCtrl *m_pClientListCtrl;
 	
 public:

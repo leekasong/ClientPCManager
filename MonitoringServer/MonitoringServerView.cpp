@@ -29,6 +29,7 @@ BEGIN_MESSAGE_MAP(CMonitoringServerView, CView)
 	ON_WM_CREATE()
 	ON_WM_SIZE()
 	ON_WM_PAINT()
+	ON_WM_DESTROY()
 END_MESSAGE_MAP()
 
 // CMonitoringServerView construction/destruction
@@ -41,6 +42,7 @@ CMonitoringServerView::CMonitoringServerView()
 
 CMonitoringServerView::~CMonitoringServerView()
 {
+	if (m_pClientListView) delete m_pClientListView;
 }
 
 BOOL CMonitoringServerView::PreCreateWindow(CREATESTRUCT& cs)
@@ -147,3 +149,12 @@ void CMonitoringServerView::OnPaint()
 	//dc.FillSolidRect(r, RGB(, 10, 10));
 }
 
+
+
+void CMonitoringServerView::OnDestroy()
+{
+	CView::OnDestroy();
+
+	m_pClientListView->DestroyWindow();
+	m_boardView.DestroyWindow();
+}

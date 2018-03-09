@@ -14,8 +14,9 @@ class CCommandCtrl : public CWnd
 	DECLARE_DYNAMIC(CCommandCtrl)
 private:
 	CCustomButton *m_pCustomButton[MAX_BUTTON_NUMBER];
+	//전략패턴.
 	CBoardView *m_pBoardView;
-	CCommonView *m_pViewList[MAX_BUTTON_NUMBER] = {new CGraphWnd, new CGraphWnd, new CInformationView, new CSupportView };
+	CCommonView *m_pViewList[MAX_BUTTON_NUMBER] = {new CSupportView , new CInformationView, new CInformationView, new CSupportView };
 	
 public:
 	void SetBoardViewWnd(CBoardView *pBoardView);

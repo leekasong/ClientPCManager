@@ -11,7 +11,6 @@ private:
 	TCHAR m_fileName[_MAX_FNAME];
 	CDC *m_pImageDC;
 	int m_imageWidth, m_imageHeight;
-	CBitmap *m_pAlphaBmp;
 
 	BOOL m_bClicked, m_bHover;
 	BYTE m_transValue;

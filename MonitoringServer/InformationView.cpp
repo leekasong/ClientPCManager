@@ -53,24 +53,22 @@ void CInformationView::OnPaint()
 	int size = m_pClientListCtrl->GetCheckedListSize();
 	m_checkedSize = 0;
 	int width = r.Width() / 8;
+	int curCheckedCount = 0;
+	for (int i = 0; i < size; i++) if(m_pCheckedList[i]) curCheckedCount++;
 	CStringList list;
 	for (int i = size-1; i >= 0; i--) {
-		if (m_pChekedList[i]) {
+		if (m_pCheckedList[i]) {
 			CString str;
 			str.Format(_T("COM%d"), i+1);
-			m_pInfoDataView[m_checkedSize].SetComputer(str);
+			m_pInfoDataView[curCheckedCount - (m_checkedSize + 1)].SetComputer(str);
 			list.AddTail(str);
-			/*CBrush brush, *p_old_brush;
-			brush.CreateSolidBrush(RGB(242, 242, 242));
-			p_old_brush = dc.SelectObject(&brush);
-			dc.SelectObject(p_old_brush);
-			*/
-			dc.TextOutW(r.left + m_checkedSize * width, r.top + 5, str);
+			
+			dc.TextOutW(r.left + (curCheckedCount-(m_checkedSize+1))* width, r.top + 5, str);
+
 			m_checkedSize++;
 		}
 	}
-
-
+	
 
 	if (m_checkedSize == 0) {
 		for (int i = 0; i < MAX_INFO_VIEW_NUMBER; i++) {
@@ -79,6 +77,7 @@ void CInformationView::OnPaint()
 		dc.FillSolidRect(r, RGB(244, 244, 244));
 		dc.DrawText(_T("선택된 클라이언트가 없습니다."), r, DT_SINGLELINE | DT_VCENTER | DT_CENTER);
 	}
+
 
 	
 }
