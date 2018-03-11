@@ -37,7 +37,7 @@ extern int g_wnd_id_a;
 extern int g_wnd_id_b;
 extern int g_wnd_id_c;
 
-
+#define _CRTDBG_MAP_ALLOC #include <stdlib.h> #include <crtdbg.h>  
 
 //wParam (½Äº°°ª) : 0-Monitoring, 1-History, 2-information, 3-Support
 #define UM_COMMAND_CHNAGED	WM_USER + 1

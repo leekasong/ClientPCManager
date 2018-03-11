@@ -20,8 +20,8 @@ CInformationDataView::CInformationDataView()
 CInformationDataView::~CInformationDataView()
 {
 	if (m_pInformationSWView) delete m_pInformationSWView;
-	if (m_pInformationDiskView) delete m_pInformationDiskView;
 	if (m_pProcessorView) delete m_pProcessorView;
+	if (m_pInformationDiskView) delete m_pInformationDiskView;
 }
 
 
@@ -43,9 +43,8 @@ void CInformationDataView::OnPaint()
 	CPaintDC dc(this); // device context for painting
 	CRect r;
 	GetClientRect(&r);
-	dc.FillSolidRect(r, RGB(255, 0, 0));
+	dc.FillSolidRect(r, RGB(240, 240, 240));
 
-	dc.TextOutW(r.left, r.top, m_comName);
 }
 
 void CInformationDataView::SetComputer(CString comName) {

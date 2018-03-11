@@ -246,6 +246,7 @@
   <ItemGroup>
     <Image Include="..\Debug\gra.bmp" />
     <Image Include="..\Debug\PC_Small.bmp" />
+    <Image Include="..\Release\processor.bmp" />
     <Image Include="res\gra.bmp" />
     <Image Include="res\MonitoringServer.ico" />
     <Image Include="res\MonitoringServerDoc.ico" />

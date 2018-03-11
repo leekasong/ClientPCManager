@@ -183,5 +183,8 @@
     <Image Include="res\PC_Small.bmp">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="..\Release\processor.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

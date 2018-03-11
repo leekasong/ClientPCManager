@@ -17,7 +17,7 @@ CBoardView::CBoardView()
 
 CBoardView::~CBoardView()
 {
-	if (m_pViewWnd) delete m_pViewWnd;
+	//if (m_pViewWnd) delete m_pViewWnd;
 }
 
 
@@ -80,5 +80,5 @@ void CBoardView::OnPaint()
 
 	CRect r;
 	GetClientRect(&r);
-	dc.FillSolidRect(r, RGB(255, 0, 0));
+	dc.FillSolidRect(r, RGB(234, 234, 234));
 }

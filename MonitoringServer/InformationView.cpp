@@ -48,7 +48,7 @@ void CInformationView::OnPaint()
 	
 	CRect r;
 	GetClientRect(&r);
-	dc.FillSolidRect(r, RGB(244, 244, 244));
+	dc.FillSolidRect(r, RGB(233, 233, 233));
 	
 	int size = m_pClientListCtrl->GetCheckedListSize();
 	m_checkedSize = 0;
@@ -91,7 +91,7 @@ int CInformationView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	m_pInfoDataView = new CInformationDataView[MAX_INFO_VIEW_NUMBER];
 	for (int i = 0; i < MAX_INFO_VIEW_NUMBER; i++) {
-		m_pInfoDataView[i].Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, 10 + i);
+		m_pInfoDataView[i].Create(NULL, NULL, WS_CHILD | WS_VISIBLE, CRect(0, 0, 0, 0), this, ++g_wnd_id_b);
 	}
 
 
