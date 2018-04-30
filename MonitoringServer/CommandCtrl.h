@@ -1,9 +1,10 @@
 #pragma once
 #include "CustomButton.h"
 #include "BoardView.h"
-#include "GraphWnd.h"
+#include "MonitoringView.h"
 #include "SupportView.h"
 #include "InformationView.h"
+#include "HistoryView.h"
 #include "CommonView.h"
 #define MAX_BUTTON_NUMBER	4
 
@@ -15,7 +16,7 @@ class CCommandCtrl : public CWnd
 private:
 	CCustomButton *m_pCustomButton[MAX_BUTTON_NUMBER];
 	CBoardView *m_pBoardView;
-	CCommonView *m_pViewList[MAX_BUTTON_NUMBER] = {new CGraphWnd, new CGraphWnd, new CInformationView, new CSupportView };
+	CCommonView *m_pViewList[MAX_BUTTON_NUMBER] = {new CMonitoringView, new CHistoryView, new CInformationView, new CSupportView };
 	
 public:
 	void SetBoardViewWnd(CBoardView *pBoardView);

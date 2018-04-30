@@ -1,7 +1,6 @@
 
 // MainFrm.h : interface of the CMainFrame class
 //
-
 #pragma once
 
 class CMainFrame : public CFrameWnd
@@ -39,6 +38,8 @@ protected:
 	DECLARE_MESSAGE_MAP()
 
 	
+public:
+	afx_msg void OnGraphMode1();
 };
 
 

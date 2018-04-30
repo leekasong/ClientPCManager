@@ -1,7 +1,6 @@
 #pragma once
 #include "InformationDataView.h"
 #include "CommonView.h"
-#define MAX_INFO_VIEW_NUMBER	4
 // CInformationView
 
 class CInformationView : public CCommonView

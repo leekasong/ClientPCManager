@@ -1,6 +1,6 @@
 #pragma once
 #include "ClientListCtrl.h"
-
+#define MAX_INFO_VIEW_NUMBER	4
 // CCommonView
 
 class CCommonView : public CWnd

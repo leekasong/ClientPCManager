@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CBoardView">
+    <Position X="5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACIAAAAAAEAAAAAAAAAAAAAgCAAAAAAAAAAgABAAAA=</HashCode>
+      <FileName>BoardView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CClientDBData" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAIAAAAABAAAAAAAAAAAAAAAAgAAAAAAAAAAIAIAAA=</HashCode>
+      <FileName>ClientDBData.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CClientListCtrl" Collapsed="true">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAAALAAEABACCigAgAIAAADABAACQiAAAgEJQEBA=</HashCode>
+      <FileName>ClientListCtrl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CClientListView">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAAAAAAAEAAIAAAABAAAAIACAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>ClientListView.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_pBoardView" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CCommandCtrl">
+    <Position X="6.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAEEgAQBAAAAAAAIACAAAAAAAAAAIACAIAA=</HashCode>
+      <FileName>CommandCtrl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCommonView" Collapsed="true">
+    <Position X="7" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAQAAAAAAAAAAAAAAABAAAAEAEAABAA=</HashCode>
+      <FileName>CommonView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CCustomButton" Collapsed="true">
+    <Position X="12.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAICAJIAAQAACACIAAAABAADgAAEQACAAAAAKQACA=</HashCode>
+      <FileName>CustomButton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CGraphWnd" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAIAAAIAA=</HashCode>
+      <FileName>GraphWnd.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CInformationDataSWView" Collapsed="true">
+    <Position X="4.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACEAAABAAgAAAAAAAQFABAAABAAAAAIAAAAAAAQAAA=</HashCode>
+      <FileName>InformationDataSWView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CInformationDataView" Collapsed="true">
+    <Position X="10.25" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAQAAEAAQAAAAEAAAAAACAgAAAAAAAAAAEAAAQ=</HashCode>
+      <FileName>InformationDataView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CInformationDiskView" Collapsed="true">
+    <Position X="10" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACBAAAAAACAAGAAAAAAAAAAAAAAABAAAAAAAAAwIAA=</HashCode>
+      <FileName>InformationDiskView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CInformationProcessorDataView" Collapsed="true">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACBCAAAAAAQAACAAAABAAAAACAEAAAAACAAAAoAAAA=</HashCode>
+      <FileName>InformationProcessorDataView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CInformationView" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gACCAAAAgAEAAAAAAAAAAAAAACAAAAAAAAAAAAAQABA=</HashCode>
+      <FileName>InformationView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CListCtrlMoveBtn" Collapsed="true">
+    <Position X="4.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAIAAEAAAAADAAEAAAAAACAAAAIAQAAA=</HashCode>
+      <FileName>ListCtrlMoveBtn.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMainFrame" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAiAAAgCAAAgAAAAAAAAAAABA=</HashCode>
+      <FileName>MainFrm.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMonitoringServerApp" Collapsed="true">
+    <Position X="3.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAABAAAAAAQAAAABAAAAAAA=</HashCode>
+      <FileName>MonitoringServer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMonitoringServerView" Collapsed="true">
+    <Position X="5.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAFAAAgACABAgAgAgCAAAAAAAAkoAAAAAQA=</HashCode>
+      <FileName>MonitoringServerView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSupportView" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAgAAAAAAAAAAAAQAAAAABASAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>SupportView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Malgun Gothic" Size="9" />
+</ClassDiagram>

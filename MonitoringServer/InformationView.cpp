@@ -60,11 +60,7 @@ void CInformationView::OnPaint()
 			str.Format(_T("COM%d"), i+1);
 			m_pInfoDataView[m_checkedSize].SetComputer(str);
 			list.AddTail(str);
-			/*CBrush brush, *p_old_brush;
-			brush.CreateSolidBrush(RGB(242, 242, 242));
-			p_old_brush = dc.SelectObject(&brush);
-			dc.SelectObject(p_old_brush);
-			*/
+		
 			dc.TextOutW(r.left + m_checkedSize * width, r.top + 5, str);
 			m_checkedSize++;
 		}

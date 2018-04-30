@@ -12,17 +12,20 @@
 #define IDB_PC_BITMAP                   320
 #define ID_RESOURCE_INSTALLEDS          32771
 #define ID_RESOURCE_INSTALLEDH          32772
-#define ID_RESOURCE_SW                  32773
-#define ID_RESOURCE_HW                  32774
 #define ID_PROCESS_VIEW                 32775
 #define ID_PROCESS_TERMINATE            32776
+#define ID_VIEW_GRAPH                   32777
+#define ID_GRAPH_MODE_1                 32785
+#define ID_GRAPH_MODE_2                 32787
+#define ID_GRAPH_MODE_4                 32788
+#define ID_VIEW                         32789
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        321
-#define _APS_NEXT_COMMAND_VALUE         32777
+#define _APS_NEXT_COMMAND_VALUE         32790
 #define _APS_NEXT_CONTROL_VALUE         1000
 #define _APS_NEXT_SYMED_VALUE           310
 #endif

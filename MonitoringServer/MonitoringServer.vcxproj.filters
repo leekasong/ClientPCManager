@@ -54,9 +54,6 @@
     <ClInclude Include="CustomButton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GraphWnd.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ListCtrlMoveBtn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -85,6 +82,30 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ClientDBData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitoringView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestDLL_Wnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientComData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollBarWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinimapWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphWnd.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -119,9 +140,6 @@
     <ClCompile Include="CustomButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GraphWnd.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ListCtrlMoveBtn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -147,6 +165,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ClientDBData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitoringView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -184,6 +208,12 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="..\Release\processor.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Release\gra.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Release\PC_Small.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

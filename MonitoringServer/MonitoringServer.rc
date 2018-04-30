@@ -66,15 +66,10 @@ END
 //
 // Bitmap
 //
-#ifdef _DEBUG
-IDB_GRADATION_BITMAP    BITMAP                  "E:\\mfc\\ClientPCManager\\Debug\\gra.bmp"
 
-IDB_PC_BITMAP           BITMAP                  "E:\\mfc\\ClientPCManager\\Debug\\PC_Small.bmp"
-#else
 IDB_GRADATION_BITMAP    BITMAP                  "E:\\mfc\\ClientPCManager\\Release\\gra.bmp"
 
 IDB_PC_BITMAP           BITMAP                  "E:\\mfc\\ClientPCManager\\Release\\PC_Small.bmp"
-#endif
 
 #endif    // Korean (Korea) resources
 /////////////////////////////////////////////////////////////////////////////
@@ -143,19 +138,16 @@ BEGIN
         MENUITEM "View",                        ID_PROCESS_VIEW
         MENUITEM "Terminate",                   ID_PROCESS_TERMINATE
     END
-    POPUP "&View"
+    MENUITEM "&View",                       ID_VIEW
+    POPUP "&Graph"
     BEGIN
-        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
-        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "1 Graph Mode",                ID_GRAPH_MODE_1
+        MENUITEM "2 Graph Mode",                ID_GRAPH_MODE_2
+        MENUITEM "4 Graph Mode",                ID_GRAPH_MODE_4
     END
     POPUP "&Help"
     BEGIN
         MENUITEM "&About MonitoringServer...",  ID_APP_ABOUT
-    END
-    POPUP "&Resource"
-    BEGIN
-        MENUITEM "Installed S/W",               ID_RESOURCE_SW
-        MENUITEM "Installed H/W",               ID_RESOURCE_HW
     END
 END
 

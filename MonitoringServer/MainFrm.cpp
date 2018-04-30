@@ -17,6 +17,7 @@ IMPLEMENT_DYNCREATE(CMainFrame, CFrameWnd)
 
 BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_WM_CREATE()
+	ON_COMMAND(ID_GRAPH_MODE_1, &CMainFrame::OnGraphMode1)
 END_MESSAGE_MAP()
 
 static UINT indicators[] =
@@ -97,3 +98,10 @@ void CMainFrame::Dump(CDumpContext& dc) const
 
 
 
+
+
+void CMainFrame::OnGraphMode1()
+{
+		
+	this->PostMessageW(UM_CHANGE_GRAPH_MODE, 1, 0);
+}

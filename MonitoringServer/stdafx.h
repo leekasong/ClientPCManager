@@ -41,9 +41,11 @@ extern int g_wnd_id_c;
 
 //wParam (½Äº°°ª) : 0-Monitoring, 1-History, 2-information, 3-Support
 #define UM_COMMAND_CHNAGED	WM_USER + 1
+#define UM_CHANGE_GRAPH_MODE	WM_USER + 2
 
 #pragma comment(lib, "ClientResourceDB")
-
+#pragma comment(lib, "TestDLL_Wnd")
+#pragma comment(lib, "KS_GraphControl")
 
 #ifdef _UNICODE
 #if defined _M_IX86

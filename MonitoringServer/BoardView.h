@@ -1,8 +1,7 @@
 #pragma once
-
+#include "CommonView.h"
 
 // 
-#include "GraphWnd.h"
 
 class CBoardView : public CWnd
 {
